@@ -2,7 +2,7 @@
 import homeBg from "./assets/img/home-bg.jpg";
 
 function initializeHome() {
-    const contentElement = document.querySelector("#content");
+    const contentElement = document.querySelector(".content-box");
     contentElement.innerHTML = "";
 
     // Header
@@ -22,7 +22,7 @@ function initializeHome() {
     homeBgElement.classList.add("home-bg");
     homeBgElement.src = homeBg;
     homeBgElement.alt = "Home Background Image";
-    contentElement.appendChild(homeBgElement);
+    document.body.appendChild(homeBgElement);
 }
 
 export { initializeHome }

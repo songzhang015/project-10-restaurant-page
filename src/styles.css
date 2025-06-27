@@ -9,9 +9,39 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: var(--bg-white);
+    display: grid;
+    grid-template-rows: 12vh 1fr;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    
 }
 
 .home-bg {
-    width: 1000px;
-    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(1px);
+    transform: scale(1.01);
+}
+
+#content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-box {
+    background-color: rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8em;
 }
