@@ -1,1 +1,2 @@
-# project-10-restaurant-page
+# Restaurant Page
+- Built using HTML, CSS, JS, and bundled via Webpack
