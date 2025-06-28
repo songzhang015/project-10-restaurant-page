@@ -1,12 +1,12 @@
-/* JS File for Restaurant Page Project relating to the homepage */
+/* JS File for Restaurant Page Project relating to the menu page */
 
-function initializeHome() {
+function initializeMenu() {
     const contentElement = document.querySelector(".content-box");
     contentElement.innerHTML = "";
 
     // Header
     const homeHeaderElement = document.createElement("h1");
-    homeHeaderElement.textContent = "The Ice Cream Den";
+    homeHeaderElement.textContent = "MENU";
     
     contentElement.appendChild(homeHeaderElement);
     
@@ -18,4 +18,4 @@ function initializeHome() {
     contentElement.appendChild(homePElement);
 }
 
-export { initializeHome }
+export { initializeMenu }
