@@ -2,6 +2,7 @@
 
 function initializeContact() {
     const contentElement = document.querySelector(".content-box");
+    contentElement.classList.remove("menu");
     contentElement.innerHTML = "";
 
     // Header
