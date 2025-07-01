@@ -13,8 +13,7 @@ function initializeHome() {
     
     // Paragraph
     const homePElement = document.createElement("p");
-    homePElement.textContent = "Burger";
-    // homePElement.textContent = "Explore endless varieties of classic or unique ice cream flavors, guaranteed to satisfy!";
+    homePElement.textContent = "Explore our six premium varieties of classic or unique milk ice cream flavors, guaranteed to satisfy!";
     
     contentElement.appendChild(homePElement);
 }

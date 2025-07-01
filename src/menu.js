@@ -11,6 +11,58 @@ function initializeMenu() {
     contentElement.classList.add("menu");
     contentElement.innerHTML = "";
 
+    // Prices
+    const priceContainer = document.createElement("div");
+    priceContainer.classList.add("price-container");
+    contentElement.appendChild(priceContainer);
+
+    const priceHeader = document.createElement("h2");
+    priceHeader.classList.add("price-header");
+    priceHeader.textContent = "Prices:"
+    priceContainer.appendChild(priceHeader);
+
+    const priceHeader1 = document.createElement("h3");
+    priceHeader1.textContent = "Scoops:"
+    priceContainer.appendChild(priceHeader1);
+
+    const priceOne = document.createElement("p");
+    priceOne.classList.add("price-item");
+    priceOne.textContent = "1 Scoop: $2.50"
+    priceContainer.appendChild(priceOne);
+
+    const priceTwo = document.createElement("p");
+    priceTwo.classList.add("price-item");
+    priceTwo.textContent = "2 Scoops: $4.50"
+    priceContainer.appendChild(priceTwo);
+
+    const priceThree = document.createElement("p");
+    priceThree.classList.add("price-item");
+    priceThree.textContent = "3 Scoops: $6.00"
+    priceContainer.appendChild(priceThree);
+
+    const priceHeader2 = document.createElement("h3");
+    priceHeader2.textContent = "Toppings:"
+    priceContainer.appendChild(priceHeader2);
+
+    const priceFour = document.createElement("p");
+    priceFour.classList.add("price-item");
+    priceFour.textContent = "Sprinkles, Whipped Cream, Chocolate Sauce"
+    priceContainer.appendChild(priceFour);
+
+    const priceFour2 = document.createElement("p");
+    priceFour2.classList.add("price-item");
+    priceFour2.textContent = "Add any number of toppings for an extra $1"
+    priceContainer.appendChild(priceFour2);
+
+    const priceHeader3 = document.createElement("h3");
+    priceHeader3.textContent = "Containers:"
+    priceContainer.appendChild(priceHeader3);
+
+    const priceFive = document.createElement("p");
+    priceFive.classList.add("price-item");
+    priceFive.textContent = "Available in a paper cup or waffle cone, no extra costs"
+    priceContainer.appendChild(priceFive);
+
     // Menu Items
 
     // Vanilla
@@ -104,35 +156,6 @@ function initializeMenu() {
     const caramelPeanutButterHeaderElement = document.createElement("h2");
     caramelPeanutButterHeaderElement.textContent = "Caramel Peanut Butter";
     caramelPeanutButterIconContainer.appendChild(caramelPeanutButterHeaderElement);
-
-    // Prices
-    const priceContainer = document.createElement("div");
-    priceContainer.classList.add("price-container");
-    contentElement.appendChild(priceContainer);
-
-    const priceList = document.createElement("ul");
-    priceList.classList.add("price-list");
-    priceContainer.appendChild(priceList);
-
-    const priceOne = document.createElement("li");
-    priceOne.classList.add("price-item");
-    priceOne.textContent = "1 Scoop: $4.00"
-    priceList.appendChild(priceOne);
-
-    const priceTwo = document.createElement("li");
-    priceTwo.classList.add("price-item");
-    priceTwo.textContent = "2 Scoops: $7.50"
-    priceList.appendChild(priceTwo);
-
-    const priceThree = document.createElement("li");
-    priceThree.classList.add("price-item");
-    priceThree.textContent = "3 Scoops: $10"
-    priceList.appendChild(priceThree);
-
-    const priceFour = document.createElement("li");
-    priceFour.classList.add("price-item");
-    priceFour.textContent = "Add any number of toppings (sprinkles, whipped cream, chocolate sauce) for $1 extra"
-    priceList.appendChild(priceFour);
 }
 
 export { initializeMenu }

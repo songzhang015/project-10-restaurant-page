@@ -95,5 +95,13 @@ nav button.active {
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     grid-column: span 2;
+    padding: 1rem;
 }
 
+.price-header {
+    text-align: center;
+}
+
+p {
+    font-size: 1.1rem;
+}
